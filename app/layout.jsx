@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Talkers.cl en construcción",
-  description: "Este sitio está en construcción - This site is under construction",
+  title: "Clases de inglés online — Talkers.cl",
+  description: "Clases de inglés online, prácticas y personalizadas.",
   robots: {
     index: false,
     follow: false,
@@ -26,7 +28,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
