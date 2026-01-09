@@ -1,15 +1,17 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Dosis, Fredoka, Nunito } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const dosis = Dosis({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const fredoka = Fredoka({
+  subsets: ["latin"],
+});
+
+const nunito = Nunito({
   subsets: ["latin"],
 });
 
@@ -26,10 +28,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${dosis.className} antialiased min-h-screen flex flex-col`}
       >
-        <Header />
-        {children}
+        <div class="flex-1 flex items-center">
+          <div className="w-full flex flex-col md:flex-row">
+            <Header />
+            {children}
+          </div>
+        </div>
         <Footer />
       </body>
     </html>

@@ -1,6 +1,6 @@
 export default function ContactLinks() {
   return (
-    <section className="flex flex-col items-center gap-4 mt-10">
+    <section style={{backgroundColor: "#00ff00"}} className="flex flex-col items-center size-min">
       <a
         href="https://instagram.com/talkers.cl"
         target="_blank"
