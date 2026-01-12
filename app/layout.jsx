@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${dosis.className} antialiased min-h-screen flex flex-col`}
       >
-        <div class="flex-1 flex items-center">
+        <div className="flex-1 flex items-center">
           <div className="w-full flex flex-col md:flex-row">
             <Header />
             {children}
