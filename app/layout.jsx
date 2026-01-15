@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${dosis.className} antialiased min-h-screen flex flex-col`}
+        className={`${fredoka.className} antialiased min-h-screen flex flex-col`}
       >
         <Header />
         {children}
