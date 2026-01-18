@@ -4,7 +4,7 @@ import MailIcon from "./icons/mail";
 
 export default function ContactLinks() {
   return (
-    <section className="flex flex-col w-auto">
+    <section className="flex-1 flex-col w-fit bg-yellow-500">
       <a
         href="mailto:talkers.cl@gmail.com"
         target="_blank"
