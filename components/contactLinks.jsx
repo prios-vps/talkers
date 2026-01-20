@@ -1,35 +1,50 @@
-import InstagramIcon from "./icons/instagram";
-import WhatsAppIcon from "./icons/whatsapp";
-import MailIcon from "./icons/mail";
-
 export default function ContactLinks() {
   return (
-    <section className="flex-1 flex-col w-fit bg-yellow-500">
+    <section className="flex-1 flex-col items-center justify-evenly">
       <a
         href="mailto:talkers.cl@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex rounded-full p-1 bg-blue-600 hover:bg-blue-700 transition"
+        className="flex gap-3 items-center"
       >
-        <MailIcon className="icon w-12 h-12" />
+        <img
+          className="h-15 w-15"
+          src="images/gmail.svg"
+          alt="Gmail"
+          width={200}
+          height={200}
+        />
+        <span className="text-4xl font-semibold">talkers.cl@gmail.com</span>
       </a>
-
       <a
         href="https://instagram.com/talkers.cl"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex rounded-full p-1 bg-pink-600 hover:bg-pink-700 transition"
+        className="flex gap-3 items-center"
       >
-        <InstagramIcon className="icon w-12 h-12" />
+        <img
+          className="h-15 w-15"
+          src="images/instagram.svg"
+          alt="Instagram"
+          width={200}
+          height={200}
+        />
+        <span className="text-4xl font-semibold">@talkers.cl</span>
       </a>
-
       <a
         href="https://wa.me/56979331633"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex rounded-full p-1 bg-green-600 hover:bg-green-700 transition"
+        className="flex gap-3 items-center"
       >
-        <WhatsAppIcon className="icon w-12 h-12" />
+        <img
+          className="h-15 w-15"
+          src="images/whatsapp.svg"
+          alt="WhatsApp"
+          width={200}
+          height={200}
+        />
+        <span className="text-4xl font-semibold">9 7933 1633</span>
       </a>
     </section>
   );
