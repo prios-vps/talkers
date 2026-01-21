@@ -3,11 +3,11 @@ import ContactLinks from "@/components/contactLinks";
 export default function Home() {
   return (
     <>
-      <main className="flex-1 flex-col bg-pink-100">
-        <p className="uppercase text-7xl font-semibold p-6 text-white bg-green-400 text-center">Clases de Inglés</p>
-        <p className="uppercase text-6xl font-semibold p-6 text-white bg-blue-300 text-center">personalizadas</p>
-        <div className="flex flex-row justify-around align-center">
-          <div className="flex w-fit p-10">
+      <main className="flex grow-1 flex-col bg-green-50">
+        <div className="flex justify-center items-center text-center uppercase text-7xl font-semibold p-4 text-white bg-green-400">Clases de Inglés</div>
+        <div className="flex justify-center items-center text-center uppercase text-5xl sm:text-6xl font-semibold p-4 text-white bg-blue-400">personalizadas</div>
+        <div className="flex flex-col justify-center py-10 md:py-0 md:flex-row grow-1 gap-10 lg:gap-30 items-center">
+          <div className="flex w-fit">
             <img
               className="h-80 w-80"
               src="images/logo/Full logo ajustado.svg"
@@ -20,7 +20,7 @@ export default function Home() {
           </div>
           <ContactLinks />
         </div>
-        <p className="uppercase text-6xl font-semibold p-6 text-white bg-blue-300 text-center">para estudiantes y adultos</p>
+        <div className="flex justify-center items-center text-center uppercase text-5xl sm:text-6xl font-semibold p-4 text-white bg-blue-400">para estudiantes y adultos</div>
       </main>
     </>
   );

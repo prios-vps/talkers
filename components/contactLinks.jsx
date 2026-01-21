@@ -1,6 +1,6 @@
 export default function ContactLinks() {
   return (
-    <section className="flex-1 flex-col items-center justify-evenly">
+    <section className="flex flex-col gap-10 justify-center">
       <a
         href="mailto:talkers.cl@gmail.com"
         target="_blank"
@@ -8,7 +8,7 @@ export default function ContactLinks() {
         className="flex gap-3 items-center"
       >
         <img
-          className="h-15 w-15"
+          className="h-12 w-12"
           src="images/gmail.svg"
           alt="Gmail"
           width={200}
@@ -23,7 +23,7 @@ export default function ContactLinks() {
         className="flex gap-3 items-center"
       >
         <img
-          className="h-15 w-15"
+          className="h-12 w-12"
           src="images/instagram.svg"
           alt="Instagram"
           width={200}
@@ -38,7 +38,7 @@ export default function ContactLinks() {
         className="flex gap-3 items-center"
       >
         <img
-          className="h-15 w-15"
+          className="h-12 w-12"
           src="images/whatsapp.svg"
           alt="WhatsApp"
           width={200}
