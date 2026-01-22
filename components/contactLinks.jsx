@@ -1,3 +1,5 @@
+import InstagramIcon from "./icons/instagram";
+
 export default function ContactLinks() {
   return (
     <section className="flex flex-col gap-10 justify-center">
@@ -22,13 +24,14 @@ export default function ContactLinks() {
         rel="noopener noreferrer"
         className="flex gap-3 items-center"
       >
-        <img
+        {/* <img
           className="h-12 w-12"
           src="images/instagram.svg"
           alt="Instagram"
           width={200}
           height={200}
-        />
+        /> */}
+        <InstagramIcon className="h-12 w-12" />
         <span className="text-4xl font-semibold">@talkers.cl</span>
       </a>
       <a
