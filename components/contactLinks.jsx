@@ -1,4 +1,5 @@
 import InstagramIcon from "./icons/instagram";
+import GMailIcon from "./icons/gmail";
 
 export default function ContactLinks() {
   return (
@@ -9,13 +10,14 @@ export default function ContactLinks() {
         rel="noopener noreferrer"
         className="flex gap-3 items-center"
       >
-        <img
+        {/* <img
           className="h-12 w-12"
           src="images/gmail.svg"
           alt="Gmail"
           width={200}
           height={200}
-        />
+        /> */}
+        <GMailIcon className="h-12 w-12" />
         <span className="text-4xl font-semibold">talkers.cl@gmail.com</span>
       </a>
       <a
