@@ -1,20 +1,14 @@
-import Navbar from "./navbar";
-
 export default function Header() {
   return (
     <header>
-    {/* <header className="flex flex-row bg-blue-200 p-3 gap-5"> */}
-      <h1 className="sr-only">Clases de inglés online</h1>
-      {/*
-      <img
-        className="flex-0"
-        src="images/logo/Logotipo.svg"
-        alt="Talkers.cl"
-        width={200}
-        height={200}
-      />
-      <Navbar className="flex-1 uppercase bg-yellow-200"/>
-      */}
+      <h1>
+        <div className="flex justify-center items-center text-center uppercase text-7xl font-semibold p-4 text-white bg-green-400">
+          Clases de inglés
+        </div>{" "}
+        <div className="flex justify-center items-center text-center uppercase text-5xl sm:text-6xl font-semibold p-4 text-white bg-blue-400">
+          personalizadas
+        </div>
+      </h1>
     </header>
   );
 }

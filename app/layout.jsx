@@ -1,17 +1,9 @@
-import { Dosis, Fredoka, Nunito } from "next/font/google";
+import { Fredoka } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 
-const dosis = Dosis({
-  subsets: ["latin"],
-});
-
 const fredoka = Fredoka({
-  subsets: ["latin"],
-});
-
-const nunito = Nunito({
   subsets: ["latin"],
 });
 
@@ -19,14 +11,14 @@ export const metadata = {
   title: "Clases de inglés online — Talkers.cl",
   description: "Clases de inglés online, prácticas y personalizadas.",
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${fredoka.className} antialiased min-h-screen flex flex-col`}
       >

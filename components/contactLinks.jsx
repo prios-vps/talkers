@@ -1,5 +1,6 @@
 import InstagramIcon from "./icons/instagram";
 import GMailIcon from "./icons/gmail";
+import WhatsAppIcon from "./icons/whatsapp";
 
 export default function ContactLinks() {
   return (
@@ -10,13 +11,6 @@ export default function ContactLinks() {
         rel="noopener noreferrer"
         className="flex gap-3 items-center"
       >
-        {/* <img
-          className="h-12 w-12"
-          src="images/gmail.svg"
-          alt="Gmail"
-          width={200}
-          height={200}
-        /> */}
         <GMailIcon className="h-12 w-12" />
         <span className="text-4xl font-semibold">talkers.cl@gmail.com</span>
       </a>
@@ -25,14 +19,8 @@ export default function ContactLinks() {
         target="_blank"
         rel="noopener noreferrer"
         className="flex gap-3 items-center"
+        aria-label="Instagram talkers.cl"
       >
-        {/* <img
-          className="h-12 w-12"
-          src="images/instagram.svg"
-          alt="Instagram"
-          width={200}
-          height={200}
-        /> */}
         <InstagramIcon className="h-12 w-12" />
         <span className="text-4xl font-semibold">@talkers.cl</span>
       </a>
@@ -42,13 +30,7 @@ export default function ContactLinks() {
         rel="noopener noreferrer"
         className="flex gap-3 items-center"
       >
-        <img
-          className="h-12 w-12"
-          src="images/whatsapp.svg"
-          alt="WhatsApp"
-          width={200}
-          height={200}
-        />
+        <WhatsAppIcon className="h-12 w-12" />
         <span className="text-4xl font-semibold">9 7933 1633</span>
       </a>
     </section>
