@@ -8,7 +8,7 @@ export default function GMailIcon({ className }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="52 42 88 66"
+      viewBox="49 26 92 92"
       className={className}
       aria-hidden="true"
       focusable="false"
