@@ -4,7 +4,7 @@ import WhatsAppIcon from "./icons/whatsapp";
 
 export default function ContactLinks() {
   return (
-    <section className="flex flex-col gap-[5vw] min-[440px]:gap-10 justify-center">
+    <section className="flex grow flex-col gap-[4vw] min-[440px]:gap-6 justify-center">
       <a
         href="mailto:talkers.cl@gmail.com"
         target="_blank"
@@ -12,7 +12,7 @@ export default function ContactLinks() {
         className="flex gap-[3vw] min-[440px]:gap-3 items-center"
       >
         <GMailIcon className="h-[12vw] w-[12vw] min-[440px]:h-12 min-[440px]:w-12" />
-        <span className="text-[8vw] min-[440px]:text-4xl font-semibold">talkers.cl@gmail.com</span>
+        <span className="text-[8vw] min-[440px]:text-4xl font-medium text-relleno-azul-marino text-stroke-borde-azul-marino text-stroke-1" style={{ paintOrder: 'stroke fill' }}>talkers.cl@gmail.com</span>
       </a>
       <a
         href="https://instagram.com/talkers.cl"
@@ -22,7 +22,7 @@ export default function ContactLinks() {
         aria-label="Instagram talkers.cl"
       >
         <InstagramIcon className="h-[12vw] w-[12vw] min-[440px]:h-12 min-[440px]:w-12" />
-        <span className="text-[8vw] min-[440px]:text-4xl font-semibold">@talkers.cl</span>
+        <span className="text-[8vw] min-[440px]:text-4xl font-medium text-relleno-azul-marino text-stroke-borde-azul-marino text-stroke-1" style={{ paintOrder: 'stroke fill' }}>@talkers.cl</span>
       </a>
       <a
         href="https://wa.me/56979331633"
@@ -31,7 +31,7 @@ export default function ContactLinks() {
         className="flex gap-[3vw] min-[440px]:gap-3 items-center"
       >
         <WhatsAppIcon className="h-[12vw] w-[12vw] min-[440px]:h-12 min-[440px]:w-12" />
-        <span className="text-[8vw] min-[440px]:text-4xl font-semibold">9 7933 1633</span>
+        <span className="text-[8vw] min-[440px]:text-4xl font-medium text-relleno-azul-marino text-stroke-borde-azul-marino text-stroke-1" style={{ paintOrder: 'stroke fill' }}>9 7933 1633</span>
       </a>
     </section>
   );
